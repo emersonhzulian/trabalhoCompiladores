@@ -1,0 +1,16 @@
+program Lesson1_Program1;  
+
+label 1, 12, 123;
+
+const 
+	teste1 = 123;
+	teste2 = teste1;
+ 
+function funcTeste () : ; 
+begin 
+
+end; 
+ 
+begin    
+;;;;;;;;
+end.

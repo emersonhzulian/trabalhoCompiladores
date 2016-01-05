@@ -1,0 +1,83 @@
+Syntax Diagram:
+
+- MYPAS / PROGRAM [OK]
+
+- BLOCK
+	- LABEL [OK]
+	- CONST
+		- constant()
+	- TYPE
+		- type()
+	- VAR
+		- type()
+	- PROCEDURE
+		- parameterList()
+	- FUNCTION
+		- parameterList()
+		- type()
+	- BEGIN
+		- statement()
+		
+- heading() [OK]
+	- PROCEDURE
+	- FUNCTION
+
+- parameterList()
+
+- type()
+	- ARRAY [OK]
+	- simpleType()
+	- type identifier
+	
+- simpleType()
+	- ID [OK]
+	- type identifier
+	- constant
+	
+- statement()
+	- unsigned integer [OK]
+	- variable [meio feito]
+	- function identifier [meio feito]
+	- procedure identifier [meio feito]
+	- BEGIN [OK]
+	- IF [OK]
+	- REPEAT [OK]
+	- WHILE [OK]
+	- FOR [meio feito]
+	- CASE [meio feito]
+	- WITH [meio feito]
+	- GOTO [OK]
+	
+- expression() [OK]
+
+- simpleExpression() [OK]
+
+- term() [OK]
+
+- factor()
+	- Unsigned Integer [meio feito]
+	- Variable
+	- Function Identifier [meio feito]
+	- (Expression) [OK]
+	- NOT [OK]
+	- [Expression] [meio feito]
+	
+- variable()
+	- variable identifier
+		- [expression] [OK]
+		- . field identifier [NÃO PRECISA FAZER]
+		- seta para cima
+	- field identifier [NÃO PRECISA FAZER]
+	
+- constant()
+	- constant identifier [OK - verificar se está certo]
+	- unsigned number
+	- character [meio feito]
+	
+- unsigned constant
+	- constant identifier [OK - verificar se está certo]
+	- unsigned number
+	- NIL [OK]
+	- character
+
+	
